@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMERS</title>
+
+    <!-- MATERIAL CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="/images/logo.png">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="dashBoard.html">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="customerPage.html">
+                    <span class="material-symbols-outlined">group</span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="orderPage.html">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">mail</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">8</span>
+                </a>
+                <a href="productPage.html">
+                    <span class="material-symbols-outlined">inventory</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">report</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="/customer page/account.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- MAIN SECTION -->
+        <main class = "customer-page">
+            <h1>Customer List</h1>
+
+            <div class="filter-options">
+                <select>
+                    <option value="all">All Customers</option>
+                    <option value="guest">Guest Customers</option>
+                    <option value="affiliate">Affiliate Accounts</option>
+                </select>
+                <input type="text" placeholder="Search...">
+                <button>Apply</button>
+            </div>
+
+            <div class="customer-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>City</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Guest</td>
+                            <td>Vy Test</td>
+                            <td>Female</td>
+                            <td>giavy@imgroup.vn</td>
+                            <td>0909090909</td>
+                            <td>TP. Hồ Chí Minh</td>
+                            <td><button class="delete">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Affiliate</td>
+                            <td>Vy Đỗ</td>
+                            <td>Female</td>
+                            <td>vivian.do1403@gmail.com</td>
+                            <td>0928283142</td>
+                            <td>Lào Cai</td>
+                            <td><button class="delete">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Guest</td>
+                            <td>Test</td>
+                            <td>Male</td>
+                            <td>test@imgroup.vn</td>
+                            <td>091811003</td>
+                            <td>Hà Nội</td>
+                            <td><button class="delete">Delete</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Guest</td>
+                            <td>Phúc Á</td>
+                            <td>Male</td>
+                            <td>ANP@imgroup.vn</td>
+                            <td>0918110037070</td>
+                            <td> </td>
+                            <td><button class="delete">Delete</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="/admin page/script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS</title>
+
+    <!-- MATERIAL CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="/images/logo.png">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="dashBoard.html">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="customerPage.html">
+                    <span class="material-symbols-outlined">group</span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="orderPage.html">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="productPage.html">
+                    <span class="material-symbols-outlined">mail</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">8</span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">inventory</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">report</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="/customer page/account.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <!-- MAIN SECTION -->
+        <main class="product-management">
+            <h1>Product Management</h1>
+        
+            <!-- Filter Options -->
+            <div class="filter-options">
+                <select>
+                    <option value="all">Tất cả các ngày</option>
+                </select>
+                <select>
+                    <option value="category">Chọn danh mục</option>
+                </select>
+                <select>
+                    <option value="seo">All SEO Scores</option>
+                </select>
+                <button>Lọc</button>
+            </div>
+        
+            <!-- Product Table -->
+            <div class="product-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Ảnh</th>
+                            <th>Tên</th>
+                            <th>Mã sản phẩm</th>
+                            <th>Kho</th>
+                            <th>Giá</th>
+                            <th>Danh mục</th>
+                            <th>Từ khóa</th>
+                            <th>Rate</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><img src="/images/buy-1.jpg" alt="Placeholder Image" width="40"></td>
+                            <td>Red Print T-Shirt</td>
+                            <td>NH-KS A10112</td>
+                            <td><span class="in-stock">Còn hàng</span></td>
+                            <td>500.000đ</td>
+                            <td>T-Shirt</td>
+                            <td>T-Shirt</td>
+                            <td><span class="seo-star">★★★★★</span></td>
+                        
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><img src="/images/buy-2.jpg" alt="Product Image 1" width="40"></td>
+                            <td>Áo Bếp - NH-KS A10111</td>
+                            <td>NH-KS A10111</td>
+                            <td><span class="in-stock">Còn hàng</span></td>
+                            <td>500.000đ</td>
+                            <td>Giày thể thao</td>
+                            <td>Giày thể thao</td>
+                            <td><span class="seo-star">★★★★</span></td>
+                            
+                        </tr>
+                        <!-- Thêm các sản phẩm khác theo cấu trúc tương tự -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <!-- ChartJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

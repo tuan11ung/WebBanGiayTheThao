@@ -1,0 +1,88 @@
+.customer-page body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.customer-page .container {
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.customer-page header {
+    margin-bottom: 20px;
+}
+
+.customer-page header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.customer-page .filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.customer-page .filter-bar select,
+.customer-page .filter-bar input,
+.customer-page .filter-bar button {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.customer-page button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.customer-page button:hover {
+    background-color: #0056b3;
+}
+
+.customer-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.customer-page table thead {
+    background-color: #f1f1f1;
+}
+
+.customer-page table th,
+.customer-page table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.customer-page table th {
+    font-weight: bold;
+}
+
+.customer-page table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.customer-page .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.customer-page .delete-btn:hover {
+    background-color: #c82333;
+}

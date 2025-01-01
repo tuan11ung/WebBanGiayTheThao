@@ -830,3 +830,216 @@ main a {
         font-size: 2rem;
     }
 }
+/* Customer Page Styles */
+.customer-page {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Filter options */
+.customer-page .filter-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.customer-page .filter-options select,
+.customer-page .filter-options input[type="text"],
+.customer-page .filter-options button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.customer-page .filter-options button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.customer-page .filter-options button:hover {
+    background-color: #0056b3;
+}
+
+/* Customer table */
+.customer-page .customer-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.customer-page .customer-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.customer-page .customer-table th,
+.customer-page .customer-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.customer-page .customer-table th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+}
+
+.customer-page .customer-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.customer-page .customer-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.customer-page .customer-table button.delete {
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.customer-page .customer-table button.delete:hover {
+    background-color: #a71d2a;
+}
+
+
+/* File: order_table.css */
+.order-management-page {
+    padding: 20px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-options input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-options button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-options button:hover {
+    background-color: #0056b3;
+}
+
+.order-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.order-table th, .order-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.status-new {
+    color: blue;
+}
+
+.status-completed {
+    color: green;
+}
+
+.status-cancelled {
+    color: red;
+}
+
+.payment-pending {
+    color: orange;
+}
+
+.payment-completed {
+    color: green;
+}
+
+
+.product-management {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-options select,
+.filter-options button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.product-table thead {
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.product-table th, .product-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.product-table img {
+    border-radius: 4px;
+}
+
+.product-table .in-stock {
+    color: green;
+    font-weight: bold;
+}
+
+.product-table .seo-star {
+    color: gray;
+    font-size: 18px;
+}
+
+.product-table .readability {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+.product-table .readability.orange {
+    background-color: orange;
+}
+
