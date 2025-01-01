@@ -25,9 +25,10 @@
                         <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-                <a href="#">
+                <a href="#" id="search-icon-link">
                     <img src="/images/search-icon-png-9973.png" id="search-icon" width="30px" height="30px">
                 </a>
+                <input type="text" id="search-input" placeholder="Search for products..." style="display:none;">
                 <a href="cart.html">
                     <img src="/images/cart.png" width="30px" height="30px">
                 </a>
@@ -188,5 +189,26 @@
     </div>
 
     <script src="/customer page/script.js"></script>
+    <script>
+        document.getElementById('search-icon-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Ngừng hành động mặc định (chuyển trang)
+
+            var searchInput = document.getElementById('search-input');
+            
+            // Thêm hoặc xóa lớp 'active' để điều khiển việc hiển thị ô nhập liệu
+            if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+                searchInput.style.display = 'inline-block'; // Hiển thị ô input
+                setTimeout(function() {
+                    searchInput.classList.add('active'); // Kích hoạt hiệu ứng mở rộng
+                }, 10); // Đợi một chút để hiệu ứng hoạt động
+            } else {
+                searchInput.classList.remove('active'); // Hủy hiệu ứng thu gọn
+                setTimeout(function() {
+                    searchInput.style.display = 'none'; // Ẩn ô input khi thu gọn
+                }, 400); // Đợi thời gian hiệu ứng thu gọn
+            }
+        });
+
+    </script>
 </body>
 </html>
