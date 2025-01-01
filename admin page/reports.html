@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADMIN DASHBOARD</title>
+    <title>Reports - HeheStore</title>
 
-    <!-- MATERIAL CDN -->
+    <!-- MATERIAL ICONS & CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
-
-    <!-- STYLESHEET -->
     <link rel="stylesheet" href="style1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
+        <!-- Sidebar -->
         <aside>
             <div class="top">
                 <div class="logo">
@@ -87,136 +87,23 @@
                 </a>
             </div>
         </aside>
-        <!-- MAIN SECTION -->
+
+        <!-- Main Section -->
         <main>
-            <h1>Dashboard</h1>
-
-            <div class="date">
-                <input type="date">
-            </div>
-
-            <!-- INSIGHTS -->
-            <div class="insights">
-                <!-- SALES -->
-                <div class="sales">
-                    <span class="material-symbols-outlined">
-                        analytics
-                        </span>
-                        <div class="middle">
-                            <div class="lef">
-                                <h3>Total Sales</h3>
-                                <h1>756.250.000đ</h1>
-                            </div>
-                            <div class="progress">
-                                <svg>
-                                    <circle cx='38' cy="38" r="36"></circle>
-                                </svg>
-                                <div class="number">
-                                    <p>81%</p>
-                                </div>
-                            </div>
-                        </div>
-                        <small class="text-muted">Last 24 hours </small>
+            <h1>Reports</h1>
+        
+            <!-- Charts Section -->
+            <div class="charts">
+                <div class="chart">
+                    <h3>Sales Overview</h3>
+                    <canvas id="salesChart"></canvas>
                 </div>
-                <!-- EXPENSES -->
-                <div class="expenses">
-                    <span class="material-symbols-outlined">
-                        bar_chart
-                        </span>
-                        <div class="middle">
-                            <div class="lef">
-                                <h3>Total Expenses</h3>
-                                <h1>478.250.000đ</h1>
-                            </div>
-                            <div class="progress">
-                                <svg>
-                                    <circle cx='38' cy="38" r="36"></circle>
-                                </svg>
-                                <div class="number">
-                                    <p>62%</p>
-                                </div>
-                            </div>
-                        </div>
-                        <small class="text-muted">Last 24 hours </small>
+                <div class="chart">
+                    <h3>Revenue Growth</h3>
+                    <canvas id="revenueChart"></canvas>
                 </div>
-                <!-- INCOME -->
-                <div class="income">
-                    <span class="material-symbols-outlined">
-                        stacked_line_chart
-                        </span>
-                        <div class="middle">
-                            <div class="lef">
-                                <h3>Total Icome</h3>
-                                <h1>356.750.000đ</h1>
-                            </div>
-                            <div class="progress">
-                                <svg>
-                                    <circle cx='38' cy="38" r="36"></circle>
-                                </svg>
-                                <div class="number">
-                                    <p>44%</p>
-                                </div>
-                            </div>
-                        </div>
-                        <small class="text-muted">Last 24 hours </small>
-                </div>
-            </div>
-            <!-- END OF INSIGHTS -->
-
-            <div class="recent-orders">
-                <h2>Recent Orders</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Product Name</th>
-                            <th>Product Number</th>
-                            <th>Payment</th>
-                            <th>Status</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Red Printed T-Shirt</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Red Printed T-Shirt</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="success">Success</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Red Printed T-Shirt</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="success">Success</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Red Printed T-Shirt</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="success">Success</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Red Printed T-Shirt</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="#">Show All</a>
             </div>
         </main>
-
         <div class="right">
             <div class="top">
                 <button id="menu-btn">
@@ -335,6 +222,7 @@
         </div>
     </div>
 
-    <script src="/admin page/script1.js"></script>
+    <script src="script1.js"></script>
+    
 </body>
 </html>
