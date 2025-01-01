@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accounts - HeheStore</title>
-    <link rel = "stylesheet" href="style.css">
+    <title>About Us - HeheStore</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <nav>
-                    <ul id = "MenuItems">
+                    <ul id="MenuItems">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="about.html">About</a></li>
@@ -35,41 +35,77 @@
             </div>
         </div>
 
-<!-- account page -->
- <div class="account-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-2">
-                <img src="/images/image1.png" width="100%">
-            </div>
-            <div class="col-2">
-                <div class="form-container">
-                    <div class="form-btn">
-                        <span onclick="login()">Log in</span>
-                        <span onclick="register()">Register</span>
-                        <hr id="Indicator">
-                    </div>
 
-                    <form id="LoginForm">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
-                        <button type="button" class="btn" onclick="handleLogin()">Log in</button>
-                        <a href="">Forgot Password</a>
-                    </form>
-
-                    <form id="RegisterForm">
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Register</button>
-                    </form>
+    <!-- About Section -->
+    <div class="about">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="/images/image1.png" alt="About HeheStore" width="100%">
+                </div>
+                <div class="col-2">
+                    <h1>About Us</h1>
+                    <p>
+                        Welcome to HeheStore, your number one source for all things sports and lifestyle. We're dedicated to providing you with the best products, with a focus on quality, affordability, and exceptional customer service.
+                    </p>
+                    <p>
+                        Founded in 2024, HeheStore has come a long way from its beginnings as a small online store. Our passion for innovation and sustainability drives us to continually bring the latest trends and products to our valued customers.
+                    </p>
+                    <a href="#team" class="btn">Meet Our Team &#8594;</a>
                 </div>
             </div>
         </div>
     </div>
- </div>
 
-<!-- footer -->
+    <!-- Values Section -->
+    <div class="values">
+        <div class="small-container">
+            <h2 class="title">Our Values</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="/images/quality.png" alt="Quality">
+                    <h3>Quality</h3>
+                    <p>We prioritize high-quality products to ensure the best experience for our customers.</p>
+                </div>
+                <div class="col-4">
+                    <img src="/images/affordability.png" alt="Affordability">
+                    <h3>Affordability</h3>
+                    <p>We make top-notch products accessible to everyone at competitive prices.</p>
+                </div>
+                <div class="col-4">
+                    <img src="/images/sustainability.png" alt="Sustainability">
+                    <h3>Sustainability</h3>
+                    <p>Our commitment to the environment drives us to adopt sustainable practices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team" id="team">
+        <div class="small-container">
+            <h2 class="title">Meet Our Team</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="/images/user-1.png" alt="Team Member">
+                    <h3>Nguyen Tien Manh</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="col-3">
+                    <img src="/images/user-2.png" alt="Team Member">
+                    <h3>Nguyen Phuc A</h3>
+                    <p>Chief Marketing Officer</p>
+                </div>
+                <div class="col-3">
+                    <img src="/images/user-3.png" alt="Team Member">
+                    <h3>Nguyen Manh Duc</h3>
+                    <p>Product Manager</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -105,10 +141,10 @@
                 </div>
             </div>
             <hr>
-            <p class = "copyright">Copyright 2024 - HeheStore</p>
+            <p class="copyright">Copyright 2024 - HeheStore</p>
         </div>
     </div>
-<!-- js for toggle menu -->
+    
     <script>
         var MenuItems = document.getElementById("MenuItems");
 
@@ -117,42 +153,10 @@
         function menutoggle() {
             if (MenuItems.style.maxHeight == "0px") {
                 MenuItems.style.maxHeight = "200px";
-            }
-            else {
+            } else {
                 MenuItems.style.maxHeight = "0px";
             }
         }
     </script>
-
-    <script>
-        var LoginForm = document.getElementById("LoginForm");
-        var RegisterForm = document.getElementById("RegisterForm");
-        var Indicator = document.getElementById("Indicator");
-
-        function register() {
-            RegisterForm.style.transform = "translateX(0px)";
-            LoginForm.style.transform = "translateX(0px)";
-            Indicator.style.transform = "translateX(105px)";
-        }
-
-        function login() {
-            RegisterForm.style.transform = "translateX(300px)";
-            LoginForm.style.transform = "translateX(300px)";
-            Indicator.style.transform = "translateX(0px)";
-        }
-
-        function handleLogin() {
-   
-        var username = document.querySelector('#LoginForm input[type="text"]').value;
-        var password = document.querySelector('#LoginForm input[type="password"]').value;
-            if (username === "" || password === "") {
-                alert("Please fill out all fields!");
-                return;
-            }
-
-             window.location.href = "/admin page/dashboard.html";
-        }
-    </script>
-
 </body>
 </html>
