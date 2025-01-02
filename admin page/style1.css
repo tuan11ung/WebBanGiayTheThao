@@ -914,6 +914,118 @@ main a {
     background-color: #a71d2a;
 }
 
+/* Styles for the Messages Page */
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.message-item {
+    display: flex;
+    align-items: center;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.message-item:hover {
+    box-shadow: none;
+}
+
+.message-item .profile-photo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.message-item .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.message-item .message-preview {
+    flex: 1;
+}
+
+.message-item .message-preview h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.message-item .message-preview p {
+    color: var(--color-dark-variant);
+    font-size: 0.88rem;
+    margin-bottom: 0.3rem;
+}
+
+.message-item .message-preview .text-muted {
+    font-size: 0.76rem;
+    color: var(--color-info-dark);
+}
+
+.filter-options {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.filter-options input[type="text"] {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid var(--color-light);
+    border-radius: var(--border-radius-1);
+    font-size: 0.88rem;
+}
+
+.filter-options select {
+    padding: 0.8rem;
+    border: 1px solid var(--color-light);
+    border-radius: var(--border-radius-1);
+    font-size: 0.88rem;
+    background: var(--color-background);
+}
+
+.filter-options button {
+    padding: 0.8rem 1.6rem;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+    font-size: 0.88rem;
+}
+
+.filter-options button:hover {
+    background-color: var(--color-primary-variant);
+}
+
+.message-details {
+    margin-top: 2rem;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.message-details h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.message-details p {
+    color: var(--color-dark-variant);
+    font-size: 0.9rem;
+}
+
 
 /* File: order_table.css */
 .order-management-page {

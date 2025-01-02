@@ -1,103 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reports - HeheStore</title>
-
-    <!-- MATERIAL ICONS & CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
-    <link rel="stylesheet" href="style1.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>insights - HeheStore</title>
+    
+        <!-- MATERIAL ICONS & CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+        <link rel="stylesheet" href="style1.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
         <aside>
             <div class="top">
                 <div class="logo">
-                    <img src="/images/logo.png">
+                    <img src="/images/logo.png" alt="Logo">
                 </div>
                 <div class="close" id="close-btn">
                     <span class="material-symbols-outlined">close</span>
-
                 </div>
             </div>
             <div class="sidebar">
                 <a href="dashboard.html">
-                    <span class="material-symbols-outlined">
-                        grid_view
-                        </span>
+                    <span class="material-symbols-outlined">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
+                <a href="insights.html">
+                    <span class="material-symbols-outlined">insights</span>
+                    <h3>Insights</h3>
+                </a>
                 <a href="customerPage.html">
-                    <span class="material-symbols-outlined">
-                        group
-                        </span>
+                    <span class="material-symbols-outlined">group</span>
                     <h3>Customers</h3>
                 </a>
                 <a href="orderPage.html">
-                    <span class="material-symbols-outlined">
-                        receipt_long
-                        </span>
+                    <span class="material-symbols-outlined">receipt_long</span>
                     <h3>Orders</h3>
                 </a>
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        mail
-                        </span>
+                <a href="messages.html" class="active">
+                    <span class="material-symbols-outlined">mail</span>
                     <h3>Messages</h3>
                     <span class="message-count">8</span>
                 </a>
                 <a href="productPage.html">
-                    <span class="material-symbols-outlined">
-                        inventory
-                        </span>
+                    <span class="material-symbols-outlined">inventory</span>
                     <h3>Products</h3>
                 </a>
-                <a href="reports.html">
-                    <span class="material-symbols-outlined">
-                        report
-                        </span>
-                    <h3>Reports</h3>
-                </a>
                 <a href="add-product.html">
-                    <span class="material-symbols-outlined">
-                        add
-                    </span>
+                    <span class="material-symbols-outlined">add</span>
                     <h3>Add Product</h3>
                 </a>
                 <a href="settings.html">
-                    <span class="material-symbols-outlined">
-                        settings
-                        </span>
+                    <span class="material-symbols-outlined">settings</span>
                     <h3>Settings</h3>
                 </a>
                 <a href="/customer page/account.html">
-                    <span class="material-symbols-outlined">
-                        logout
-                        </span>
+                    <span class="material-symbols-outlined">logout</span>
                     <h3>Logout</h3>
                 </a>
             </div>
         </aside>
 
-        <!-- Main Section -->
         <main>
-            <h1>Reports</h1>
-        
-            <!-- Charts Section -->
-            <div class="charts">
-                <div class="chart">
-                    <h3>Sales Overview</h3>
-                    <canvas id="salesChart"></canvas>
+            <h1>Messages</h1>
+
+            <div class="filter-options">
+                <input type="text" placeholder="Search messages">
+                <select>
+                    <option value="all">All</option>
+                    <option value="unread">Unread</option>
+                    <option value="read">Read</option>
+                </select>
+                <button>Filter</button>
+            </div>
+
+            <div class="message-list">
+                <div class="message-item">
+                    <div class="profile-photo">
+                        <img src="/images/user-1.png" alt="User">
+                    </div>
+                    <div class="message-preview">
+                        <h3>John Doe</h3>
+                        <p>Hi there, I wanted to check...</p>
+                        <small class="text-muted">2 hours ago</small>
+                    </div>
                 </div>
-                <div class="chart">
-                    <h3>Revenue Growth</h3>
-                    <canvas id="revenueChart"></canvas>
+
+                <div class="message-item">
+                    <div class="profile-photo">
+                        <img src="/images/user-2.png" alt="User">
+                    </div>
+                    <div class="message-preview">
+                        <h3>Jane Smith</h3>
+                        <p>Can you update me on the status...</p>
+                        <small class="text-muted">5 hours ago</small>
+                    </div>
+                </div>
+
+                <div class="message-item">
+                    <div class="profile-photo">
+                        <img src="/images/user-3.png" alt="User">
+                    </div>
+                    <div class="message-preview">
+                        <h3>Mike Johnson</h3>
+                        <p>Thanks for your help with...</p>
+                        <small class="text-muted">Yesterday</small>
+                    </div>
                 </div>
             </div>
+
+            <div class="message-details">
+                <h2>Message Details</h2>
+                <p>Select a message to view details</p>
+            </div>
         </main>
+
         <div class="right">
             <div class="top">
                 <button id="menu-btn">
@@ -217,6 +235,5 @@
     </div>
 
     <script src="script1.js"></script>
-    
 </body>
 </html>
